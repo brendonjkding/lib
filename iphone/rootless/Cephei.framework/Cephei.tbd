@@ -1,11 +1,11 @@
 ---
-archs:                 [ armv7, arm64, arm64e, x86_64 ]
+archs:                 [ armv7, arm64, arm64e ]
 platform:              ios
-install-name:          "/Library/Frameworks/Cephei.framework/Cephei"
+install-name:          '@rpath/Cephei.framework/Cephei'
 current-version:       0
 compatibility-version: 0
 exports:
-  - archs:                [ armv7, arm64, arm64e, x86_64 ]
+  - archs:                [ armv7, arm64, arm64e ]
     symbols:              [ _HBOutputForShellCommand,
                             _HBOutputForShellCommandWithReturnCode,
                             _HBPreferencesDidChangeNotification,
